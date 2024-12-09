@@ -1,5 +1,5 @@
-import { configureStore } from '@reduxjs/toolkit';
-import dashboardLayoutReducer from './dashboardLayoutSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import dashboardLayoutReducer from "./dashboardLayoutSlice";
 
 const store = configureStore({
   reducer: {

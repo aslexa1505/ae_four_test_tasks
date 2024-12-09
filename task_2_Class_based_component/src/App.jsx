@@ -1,5 +1,5 @@
-import ClassCounter from './components/ClassCounter';
-import './App.css';
+import ClassCounter from "./components/ClassCounter";
+import "./App.css";
 
 export const App = () => {
   return (

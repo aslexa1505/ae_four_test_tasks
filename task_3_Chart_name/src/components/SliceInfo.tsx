@@ -1,6 +1,6 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { RootState } from '../types';
+import React from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "../types";
 
 type SliceInfoProps = {
   sliceId: number;
@@ -16,7 +16,7 @@ const SliceInfo: React.FC<SliceInfoProps> = ({ sliceId }) => {
     if (layoutItem) {
       return layoutItem.meta.sliceNameOverride || layoutItem.meta.sliceName;
     }
-    return 'Unknown Chart';
+    return "Unknown Chart";
   });
 
   return (

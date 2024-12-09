@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 class ClassCounter extends React.Component {
   constructor(props) {
@@ -6,7 +6,7 @@ class ClassCounter extends React.Component {
 
     this.state = {
       name: props.initialName || "Anonymous",
-      clicks: 0
+      clicks: 0,
     };
   }
 
@@ -14,7 +14,7 @@ class ClassCounter extends React.Component {
     // Аналог useEffect с зависимостями [count] и [clicks] на первом рендере
     console.log(`Count has changed to: ${this.props.count}`);
     console.log(`Clicks have been updated: ${this.state.clicks}`);
-    
+
     // Аналог useEffect([]): вызывается один раз при монтировании
     console.log("Setting up observers");
   }
@@ -38,7 +38,7 @@ class ClassCounter extends React.Component {
 
   handleClick = () => {
     this.setState((prevState) => ({ clicks: prevState.clicks + 1 }));
-  }
+  };
 
   render() {
     const { count } = this.props;
