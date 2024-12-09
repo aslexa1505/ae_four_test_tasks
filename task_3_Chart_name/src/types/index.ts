@@ -23,14 +23,14 @@ export type DashboardLayout = { [key: string]: LayoutItem };
 
 export type DashboardLayoutState = { present: DashboardLayout };
 
-export type DatasourcesState = object; // Заполните согласно вашей логике
+export type DatasourcesState = object;
 export type JsonObject = Record<string, any>;
-export type ChartsState = object; // Заполните согласно вашей логике
-export type DashboardState = object; // Заполните согласно вашей логике
-export type DashboardInfo = object; // Заполните согласно вашей логике
-export type DataMaskStateWithId = object; // Заполните согласно вашей логике
-export type NativeFiltersState = object; // Заполните согласно вашей логике
-export type UserWithPermissionsAndRoles = object; // Заполните согласно вашей логике
+export type ChartsState = object;
+export type DashboardState = object;
+export type DashboardInfo = object;
+export type DataMaskStateWithId = object;
+export type NativeFiltersState = object;
+export type UserWithPermissionsAndRoles = object;
 
 export type RootState = {
   datasources: DatasourcesState;

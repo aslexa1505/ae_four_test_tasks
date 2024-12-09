@@ -3,7 +3,7 @@ import { DashboardLayoutState } from '../types';
 
 const initialState: DashboardLayoutState = {
   present: {
-    // Пример начального состояния. Заполните реальными данными или загрузкой из API
+    // Пример начального состояния
     'layout1': {
       children: [],
       parents: [],
@@ -38,7 +38,6 @@ const dashboardLayoutSlice = createSlice({
   name: 'dashboardLayout',
   initialState,
   reducers: {
-    // Добавьте необходимые редьюсеры, например, для обновления layout
     setLayout(state, action: PayloadAction<DashboardLayoutState>) {
       state.present = action.payload.present;
     },
